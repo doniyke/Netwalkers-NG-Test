@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    padding: 20px;
+}
+div.dashboard-holder{
+    background-color: #F5F5F5;
+}
+
+div.dashboard-holder > div.d-flex{
+    display: flex;
+}
+div.dashboard-holder > div.d-flex > div:first-child{
+    width: 20%;
+    background-color: #FDFDFD;
+   
+}
+div.dashboard-holder > div.d-flex > div:last-child{
+    width: 80%;
+}
+
+/* side nav styling */
+div.side-nav > div{
+    box-shadow: 1px 2px 3px 4px #ccc;
+    padding: 20px;
+    min-height: 100vh;
+}
+div.side-nav > div div.logo{
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 20px;
+}
+div.side-nav > div div.logo a{
+    font-weight: 900;
+    text-decoration: none;
+    color: #000;
+    font-size: 25px;
+}
+div.side-nav > div div.logo i{
+    color: #F64637;
+    margin-right: 20px;
+}
+div.side-nav > div div.nav-links{
+    padding-top: 20px;
+}
+div.side-nav > div div.nav-links a{
+    display: block;
+    text-decoration: none;
+    font-weight: 500;
+    color: #000;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+div.side-nav > div div.nav-links a:hover, div.side-nav > div div.nav-links a.active{
+    background-color: #F64637;
+    color: #fff;
+    border-radius: 10px 2px 2px 10px;
+}
+div.side-nav > div div.nav-links a:hover i.last, div.side-nav > div div.nav-links a.active i.last{
+    background-color: #DC3B30;
+    color: #FDFDFD;
+    border-radius: 20px;
+    padding: 5px;
+
+}
+div.side-nav > div div.nav-links a.hover i.fa-caret-right{
+    font-size: 20px;
+    padding-left: 20px;
+    padding-right: 10px;
+    border-radius: 20px 50px;
+}
+div.side-nav > div div.nav-links a i.first{
+    margin-right: 20px;
+}
+div.side-nav > div div.nav-links a i.last{
+    float: inline-end;
+}
+.dropdown-container {
+    display: none;
+    background-color: #F5F5F5;
+    padding-left: 10px;
+}
+
+/* styling for profile-content */
+
+div.profile-content > div{
+    /* box-shadow: 1px 2px 3px 4px #ccc; */
+    padding: 20px;
+}
+
+div.profile-content > div div.top-nav{
+    display: flex;
+    justify-content: space-between;
+}
+div.profile-content > div div.top-nav i:hover{
+    cursor: pointer;
+}
+div.profile-content > div div.top-nav > div:first-child{
+    width: 5%;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+div.profile-content > div div.top-nav > div:nth-child(2){
+    width: 70%;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+div.profile-content > div div.top-nav > div:last-child{
+    width: 25%;
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+}
+
+div.profile-content > div div.top-nav > div:nth-child(2) input{
+    margin-left: 10px;
+    width: 80%;
+    border: none;
+    padding:10px;
+    background-color: #F5F5F5;
+    outline: none;
+
+}
+div.profile-content > div div.top-nav > div:nth-child(2) input:focus{
+    outline: none;
+}
+div.profile-content > div div.top-nav >div:last-child > i, div.profile-content > div div.top-nav >div:last-child > a{
+    margin-left:20px;
+    text-decoration: none;
+    color: #000;
+    padding-bottom: 10px;
+}
+div.profile-content > div div.top-nav >div:last-child > i, div.profile-content > div div.top-nav >div:last-child > a img{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    margin-bottom: -5px;
+}
+
+div.profile-content > div div.top-nav >div:last-child div.dropdown-container a{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 20px 10px;
+    
+}
+div.profile-content > div div.top-nav >div:last-child div.dropdown-container a i{
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    background-color: #FDFDFD;
+    font-size: 10px;
+    color: #F64637;
+    padding: 10px;
+    margin-right: 10px;
+}
+div.profile-content > div div.top-nav >div:last-child div.dropdown-container a span{
+    float: inline-end;    
+}
+div.profile-content > div div.top-nav >div:last-child div.dropdown-container{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0px 10px 0px 0px;
+    right: 5%;
+    margin-top: 20px;
+    padding-left: 0;
+}
+div.profile-content > div div.top-nav >div:last-child div.dropdown-container > div{
+   padding: 20px;
+}
+div.profile-content > div div.top-nav >div:last-child div.dropdown-container button{
+    display: block;
+    width: 100%;
+    background-color: #F64637;
+    color: #FDFDFD;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* styling for main content */
+div.main-content > div{
+    padding: 20px;
+}
+
+div.main-content > div > div.d-flex{
+    display: flex;
+}
+div.main-content > div > div.d-flex > div:first-child{
+    width: 30%;
+}
+div.main-content > div > div.d-flex > div:last-child{
+    width: 70%;
+}
+
+div.main-content > div div.basic-profile > div{
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #FDFDFD;
+}
+div.main-content > div div.basic-profile > div div.profile-img{
+    border-radius: 20px;
+    padding: 20px;
+    text-align: center;
+    color: #F64637;
+    border: 0.5px solid #ccc;
+}
+div.main-content > div div.basic-profile > div div.profile-img >div{
+   height: 300px;
+   overflow:hidden;
+}
+div.main-content > div div.basic-profile > div div.profile-buttons{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+div.main-content > div div.basic-profile > div div.profile-buttons button.btn-change-pass{
+    background-color: #F64637;
+    color: #FDFDFD;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 900;
+    padding: 13px 20px;
+}
+div.main-content > div div.basic-profile > div div.profile-buttons button.btn-edit{
+    background-color: #F5F5F5;
+    color: #000;
+    border: 1px solid #F64637;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+div.main-content > div div.full-profile > div{
+    border-radius: 20px;
+    margin: 20px;
+    background-color: #FDFDFD;
+}
+div.main-content > div div.full-profile > div div.top{
+    margin-bottom: 10px;
+    background-color: #FDFDFD;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 2px -2px #ccc;
+}
+div.main-content > div div.full-profile > div div.top div.heading{
+    box-shadow: 0 4px 2px -2px #ccc;
+}
+div.main-content>div div.full-profile>div div.top div.tabs button{
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 2px -2px #ccc;
+    padding: 15px;
+}
+div.main-content>div div.full-profile>div div.top div.tabs button.open{
+    border-radius:20%;
+    padding: 10px;
+    background:#F64637;
+    text-align:center;
+    font-size:15px;
+    z-index: 999;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+       
+}
+div.main-content>div div.full-profile>div div.top div.tabs button.open::after{
+    position:absolute;
+    content:"";
+    border-top:40px solid #F64637;
+    border-right:20px solid transparent;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+/* footer Styles */
+footer{
+    background-color: #FDFDFD;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 2px -2px #ccc;
+    border:1px solid #fff;
+    left: 0;
+    font-weight: 900;
+}
+footer div.d-flex{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+footer div.d-flex div a{
+    border-right: 1px solid #ccc;
+    padding-right: 10px;
+    text-decoration: none;
+    color: #000;
+}
+
+/* Global Styles */
+table{
+    width: 100%;
+    border: none;
+    border-collapse: collapse;
+}
+table tr{
+    margin-bottom: 20px;
+}
+table tr td{
+   padding: 20px;
+}
+tr.colored{
+    background-color: #FBF7F6;
+}
+.d-none{
+    display: none;
+}
+.side-nav-hide{
+    display: none;
+    visibility: hidden;
+}
+.profile-content-full{
+    width: 100% !important;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    div.dashboard-holder > div.d-flex{
+        flex-direction: column-reverse;
+    }
+    div.dashboard-holder > div.d-flex > div:first-child{
+        width: 100%;
+        position: absolute;
+        top:13%;
+        z-index: 99999999;
+    }
+    div.dashboard-holder > div.d-flex > div:last-child{
+        width: 100%;
+    }
+
+    /* styling for profile-content */
+
+    div.profile-content > div div.top-nav > div:nth-child(2){
+        width: 50%;
+    }
+    div.profile-content > div div.top-nav > div:last-child{
+        width: 45%;
+    }
+
+    /* styling for main content */
+    div.main-content > div{
+        padding: 5px;
+    }
+
+    div.main-content > div > div.d-flex{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    div.main-content > div > div.d-flex > div:first-child{
+        width: 100%;
+    }
+    div.main-content > div > div.d-flex > div:last-child{
+        width: 100%;
+    }
+
+    /* footer Styles */
+    footer{
+        position: static;
+        overflow-x: hidden;
+    }
+    footer div.d-flex{
+        display: flex;
+        flex-direction: column;
+
+    }
+}

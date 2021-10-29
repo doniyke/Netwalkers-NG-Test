@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <!-- My Custom Css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Clinique Plus | Dashboard</title>
+</head>
+<body>
+    <div class="dashboard-holder">
+        <div class="d-flex">
+            <div class="side-nav" id="side-nav">
+                <div>
+                    <div class="logo">
+                        <a href="#">
+                            <i class="fas fa-wave-square"></i> Clinique Plus
+                        </a>   
+                    </div>
+                    <div class="nav-links">
+                        <a href="#" class="active"><i class="fas fa-layer-group first"></i> Bed Status <i class="fas fa-arrow-right last"></i></a>
+                        <a href="#" class="dropdown-btn"><i class="fas fa-briefcase-medical first"></i> Front Office <i class="fas fa-caret-right last"></i></a>
+                        <div class="dropdown-container">
+                            <a href="#">Front Office Link 1</a>
+                            <a href="#">Front Office Link 2</a>
+                            <a href="#">Front Office Link 3</a>
+                        </div>
+                        <a href="#" class="dropdown-btn"><i class="fas fa-stethoscope first"></i> HIS <i class="fas fa-caret-right last"></i></a>
+                        <div class="dropdown-container">
+                            <a href="#">HIS Link 1</a>
+                            <a href="#">HIS Link 2</a>
+                            <a href="#">HIS Link 3</a>
+                        </div>
+                        <a href="#"><i class="fas fa-tint first"></i> Blood Bank </a>
+                        <a href="#" class="dropdown-btn"><i class="fas fa-weight first"></i> LIS <i class="fas fa-caret-right last"></i></a>
+                        <div class="dropdown-container">
+                            <a href="#">Order</a>
+                            <a href="#">QC</a>
+                            <a href="#">Phleb</a>
+                            <a href="#">Analyser</a>
+                        </div>
+                        <a href="#"><i class="fas fa-heartbeat first"></i> RIS </a>
+                        <a href="#"><i class="fas fa-file-medical-alt first"></i> Insurance </a>
+                    </div>
+                </div>
+            </div>
+            <div class="profile-content" id="profile-content">
+                <div>
+                    <div class="top-nav">
+                        <div>
+                            <i class="fas fa-bars fa-2x" onclick="toggleNav()"></i>
+                        </div>
+                        <div>
+                            <i class="fas fa-search"></i><input type="text" placeholder="Search for patient"/>
+                        </div>
+                        <div>
+                            <i class="fas fa-bell"></i>
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-arrows-alt"></i>
+                            <a href="#" class="dropdown-btn">
+                                <img src="https://picsum.photos/200">
+                                <span>Samson Monday <i class="fas fa-caret-down"></i></span>
+                            </a>
+                            <div class="dropdown-container">
+                                <div>
+                                    <a href="#"><i class="fas fa-user"></i> <span>Profile Manager</span></a>
+                                    <a href="#"><i class="fas fa-user"></i> Help & Support <br> Contact & FAQ</a>
+                                    <a href="#"><i class="fas fa-user"></i> Complaints <br>Report error</a>
+                                </div>
+                                <button><i class="fas fa-power-off"></i> Logout</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-content">
+                        <div>
+                            <div class="d-flex">
+                                <div class="basic-profile">
+                                    <div>
+                                        <div class="profile-img">
+                                            <div>
+                                                <img src="https://picsum.photos/500">
+                                            </div>
+                                            <h4>Isaac Isaac</h4>
+                                        </div>
+                                        <div class="profile-buttons">
+                                            <button class="btn-change-pass">Change Password</button>
+                                            <button class="btn-edit">Edit</button>
+                                        </div>
+                                        <div class="basic-details">
+                                            <table>
+                                                <tr class="colored">
+                                                    <td>Staff Id</td>
+                                                    <td>staff001w22</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Role</td>
+                                                    <td>Admin</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Designation</td>
+                                                    <td>CMD</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Department</td>
+                                                    <td>4</td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="full-profile">
+                                    <div>
+                                        <div class="top">
+                                            <div class="heading">
+                                                <h4>HR/Staff Profile</h4>
+                                            </div>
+                                            <div class="tabs">
+                                                <button class="open tablink" onclick="openTab(this,'profile')">Profile</button>
+                                                <button class="tablink" onclick="openTab(this,'payroll')">Payroll</button>
+                                                <button class="tablink" onclick="openTab(this,'leaves')">Leaves</button>
+                                                <button class="tablink" onclick="openTab(this,'attendance')">Attendance</button>
+                                                <button class="tablink" onclick="openTab(this,'documents')">Documents</button>
+                                                <button class="tablink" onclick="openTab(this,'timeline')">Timeline</button>
+                                            </div>
+                                        </div>
+                                        <div class="bottom">
+                                            <div id="profile" class="tab">
+                                                <table>
+                                                    <tr>
+                                                        <td>Phone</td>
+                                                        <td>+2349289928292</td>
+                                                    </tr>
+                                                    <tr  class="colored">
+                                                        <td>Emergency Contact</td>
+                                                        <td>+2347829739</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Email</td>
+                                                        <td>iykedavis69@gmail.com</td>
+                                                    </tr>
+                                                    <tr class="colored">
+                                                        <td>Date of Birth</td>
+                                                        <td>24-01-1996</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Specialty</td>
+                                                        <td>1</td>
+                                                    </tr>
+                                                    <tr class="colored">
+                                                        <td>Father Name</td>
+                                                        <td>Edwin Isaac</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Mother Maiden Name</td>
+                                                        <td>Loveth Ndukuba</td>
+                                                    </tr>
+                                                    <tr class="colored">
+                                                        <td>Highest Qualification</td>
+                                                        <td>B.Eng</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Qualification Date</td>
+                                                        <td>2021</td>
+                                                    </tr>
+                                                </table>
+                                            </div>  
+                                            <div id="payroll" class="tab d-none">
+                                                <div>Payroll Details Will appear here</div>
+                                            </div>
+                                            <div id="leaves" class="tab d-none">
+                                                <div>Leave Details Will appear here</div>
+                                            </div>  
+                                            <div id="attendance" class="tab d-none">
+                                                <div>Attendance Details Will appear here</div>
+                                            </div>  
+                                            <div id="documents" class="tab d-none">
+                                                <div>Document Details Will appear here</div>
+                                            </div>  
+                                            <div id="timeline" class="tab d-none">
+                                                <div>Timeline Details Will appear here</div>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="d-flex">
+                <div>
+                    CliniquePlus EMR by Netwalkers NG (c) 2021. All right reserved
+                </div>
+                <div>
+                    <a href="#">About</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Terms Of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Link Scripts -->
+    <script src="assets/js/script.js"></script>
+    
+</body>
+</html>
